@@ -33,7 +33,7 @@ ForEach($Computer in $ComputerName){
     #Index variable
     $logCount = 0
 
-    # Finally this is going to loop through this for each loop on line 51, we're going to loop through each of these logs
+    # Finally this is going to loop through this for each loop on line 30, we're going to loop through each of these logs
     ForEach ($log in $LogsToSearch){    
         $logCount++
         Write-Progress -Activity 'Processing logs' -Status "Processing $log" -PercentComplete ($logCount/$LogsToSearch.Count*100) -ParentId 0 -Id 1
